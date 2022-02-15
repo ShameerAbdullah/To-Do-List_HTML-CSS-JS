@@ -1,0 +1,136 @@
+.addBtn 
+{
+  padding: 12px;
+  width: 25%;
+  float: left;
+  text-align: center;
+  background: #d9d9d9;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.4s;
+  border-radius: 2px;
+  color: rgb(124, 125, 131);
+  
+}
+
+ul 
+{
+  margin-top: 10px;  
+  margin-bottom: 10px;  
+  padding: 0px;
+}
+
+ul li:hover 
+{
+  background: #ddd;
+}
+
+ul li:nth-child(odd) 
+{
+  background:rgb(145, 199, 218);
+}
+
+
+ul li.checked::before 
+{
+  content: '';
+  height: 9px;
+  width: 9px;
+  border-width: 2px 2px 2px 2px;
+  top: 18px;
+  left:2%;
+  transform: rotate(0deg);
+  border-color: #fff;
+  position: absolute;
+  border-style: solid;
+  
+}
+
+ul li 
+{
+  
+  cursor: pointer;
+  position: relative;
+  padding: 14px 10px 14px 44px;
+  background: lightblue;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  transition: 0.3s;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  
+
+}
+
+*
+{
+  box-sizing: border-box;
+}
+
+.close 
+{
+  right: 0;
+  position: absolute;
+  padding: 14px 18px 14px 18px;
+  top: 0;
+  border-style: solid;
+  padding-top: 10px;
+  border-color: rgb(139, 181, 196);
+  border-width: 3px;
+  
+}
+
+ul li.checked 
+{
+  text-decoration: line-through;
+  color: #fff;
+  background: rgb(124, 125, 131);
+    
+  
+}
+
+.close:hover 
+{
+  color: white;
+  background-color:#f44336;
+
+}
+
+.addBtn:hover 
+{
+  background-color: #bbb;
+}
+
+.header 
+{
+  background-color:rgb(148, 211, 231);
+  color:rgb(255, 255, 255);
+  text-align: center;
+  padding: 30px 40px;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  
+}
+
+.header:after 
+{
+  clear: both;
+  content: "";
+  display: table;
+  
+}
+  
+
+input 
+{
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 12px;
+  float: right;
+  font-size: 18px;
+}
